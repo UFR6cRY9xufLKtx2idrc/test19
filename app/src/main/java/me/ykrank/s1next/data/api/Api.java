@@ -49,7 +49,7 @@ public final class Api {
     private static final String URL_USER_AVATAR_BIG = URL_USER_AVATAR_PREFIX + "%s&size=big";
     private static final String URL_BROWSER_FAVOURITES = prepend("home.php?mod=space&do=favorite");
     private static final String URL_BROWSER_THREAD_LIST = prepend("forum-%s-%d.html");
-    private static final String URL_BROWSER_POST_LIST = prepend("forum.php?mod=viewthread&tid=%s&extra=page%3D1&page=%d&mobile=2");
+    private static final String URL_BROWSER_POST_LIST = prepend("thread-%s-%d-1.html");
 
     public static final String URL_VIEW_VOTE = prepend("forum.php?mod=misc&action=viewvote");
 
