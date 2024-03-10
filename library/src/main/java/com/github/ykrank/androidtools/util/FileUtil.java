@@ -122,6 +122,8 @@ public class FileUtil {
             case WEBP:
             case WEBP_A:
                 return ".webp";
+            case AVIF:
+                return ".avif";
             default:
                 return null;
         }
