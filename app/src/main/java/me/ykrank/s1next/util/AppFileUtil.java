@@ -133,6 +133,8 @@ public class AppFileUtil {
             case WEBP:
             case WEBP_A:
                 return ".webp";
+            case AVIF:
+                return ".avif";
             default:
                 return null;
         }
