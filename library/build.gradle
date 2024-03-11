@@ -97,7 +97,7 @@ dependencies {
 
     //PictureSelector
     api 'io.github.lucksiege:pictureselector:v3.10.8'
-    api 'io.github.lucksiege:compress:v3.10.8'
+    api 'io.github.lucksiege:compress:v3.11.2'
 
     //PictureUpload
     api 'org.jsoup:jsoup:1.15.3'
