@@ -53,7 +53,7 @@ public class GlideEngine implements ImageEngine {
      * @param maxHeight 资源最大加载尺寸
      * @param call      回调接口
      */
-    @Override
+
     public void loadImageBitmap(@NonNull Context context, @NonNull String url, int maxWidth, int maxHeight, OnCallbackListener<Bitmap> call) {
         if (!ActivityCompatHelper.assertValidRequest(context)) {
             return;
