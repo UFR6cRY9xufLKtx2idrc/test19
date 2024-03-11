@@ -64,21 +64,21 @@ public class GlideEngine implements ImageEngine {
                 .load(url)
                 .into(new CustomTarget<Bitmap>() {
 
-
+                    @Override
                     public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
                         if (call != null) {
                             call.onCall(resource);
                         }
                     }
 
-
+                    @Override
                     public void onLoadFailed(@Nullable Drawable errorDrawable) {
                         if (call != null) {
                             call.onCall(null);
                         }
                     }
 
-
+                    @Override
                     public void onLoadCleared(@Nullable Drawable placeholder) {
 
                     }
@@ -93,7 +93,7 @@ public class GlideEngine implements ImageEngine {
      * @param url       图片路径
      * @param imageView 承载图片ImageView
      */
-    @Override
+
     public void loadAlbumCover(@NonNull Context context, @NonNull String url, @NonNull ImageView imageView) {
         if (!ActivityCompatHelper.assertValidRequest(context)) {
             return;
@@ -116,7 +116,7 @@ public class GlideEngine implements ImageEngine {
      * @param url       图片路径
      * @param imageView 承载图片ImageView
      */
-    @Override
+
     public void loadGridImage(@NonNull Context context, @NonNull String url, @NonNull ImageView imageView) {
         if (!ActivityCompatHelper.assertValidRequest(context)) {
             return;
@@ -129,12 +129,12 @@ public class GlideEngine implements ImageEngine {
                 .into(imageView);
     }
 
-    @Override
+
     public void pauseRequests(Context context) {
         Glide.with(context).pauseRequests();
     }
 
-    @Override
+
     public void resumeRequests(Context context) {
         Glide.with(context).resumeRequests();
     }
