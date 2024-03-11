@@ -132,8 +132,10 @@ public class AppFileUtil {
                 return ".raw";
             case WEBP:
             case WEBP_A:
+            case ANIMATED_WEBP:
                 return ".webp";
             case AVIF:
+            case ANIMATED_AVIF:
                 return ".avif";
             default:
                 return null;
