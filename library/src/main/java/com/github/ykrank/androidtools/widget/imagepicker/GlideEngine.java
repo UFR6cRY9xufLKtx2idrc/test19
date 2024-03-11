@@ -64,21 +64,21 @@ public class GlideEngine implements ImageEngine {
                 .load(url)
                 .into(new CustomTarget<Bitmap>() {
 
-                    @Override
+
                     public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
                         if (call != null) {
                             call.onCall(resource);
                         }
                     }
 
-                    @Override
+
                     public void onLoadFailed(@Nullable Drawable errorDrawable) {
                         if (call != null) {
                             call.onCall(null);
                         }
                     }
 
-                    @Override
+
                     public void onLoadCleared(@Nullable Drawable placeholder) {
 
                     }
