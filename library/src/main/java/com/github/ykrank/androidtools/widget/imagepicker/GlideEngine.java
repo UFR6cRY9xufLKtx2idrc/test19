@@ -34,7 +34,7 @@ public class GlideEngine implements ImageEngine {
      * @param url       资源url
      * @param imageView 图片承载控件
      */
-    @Override
+
     public void loadImage(@NonNull Context context, @NonNull String url, @NonNull ImageView imageView) {
         if (!ActivityCompatHelper.assertValidRequest(context)) {
             return;
