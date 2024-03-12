@@ -10,10 +10,6 @@ buildscript {
         maven { url "https://jitpack.io" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         jcenter()
-        maven {
-          name 'glide-snapshot'
-          url 'https://oss.sonatype.org/content/repositories/snapshots'
-        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.2'
@@ -38,10 +34,6 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/releases/' }
         jcenter()
-        maven {
-          name 'glide-snapshot'
-          url 'https://oss.sonatype.org/content/repositories/snapshots'
-        }
     }
 }
 
