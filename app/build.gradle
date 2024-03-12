@@ -20,7 +20,7 @@ if(httpDnsSecret == null){
 }
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId 'me.ykrank.s1next'
