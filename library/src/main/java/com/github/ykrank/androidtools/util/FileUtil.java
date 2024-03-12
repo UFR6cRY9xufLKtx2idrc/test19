@@ -124,7 +124,7 @@ public class FileUtil {
             case ANIMATED_WEBP:
                 return ".webp";
             case AVIF:
-            case ANIMATED_AVIF:
+            //case ANIMATED_AVIF:
                 return ".avif";
             default:
                 return null;
