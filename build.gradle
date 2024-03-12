@@ -38,6 +38,10 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/releases/' }
         jcenter()
+        maven {
+          name 'glide-snapshot'
+          url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
     }
 }
 
