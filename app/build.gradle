@@ -167,7 +167,7 @@ dependencies {
     kapt 'nz.bradcampbell:paperparcel-compiler:2.0.8'
 
     kapt 'com.github.bumptech.glide:compiler:4.15.1'
-    implementation(dir: 'libs', name: 'avif-integration.aar')
+    implementation fileTree(dir: 'libs', name: 'avif-integration.aar')
 
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'org.greenrobot:greendao:3.3.0'
