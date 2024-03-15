@@ -79,7 +79,7 @@ dependencies {
     api 'io.reactivex.rxjava2:rxkotlin:2.4.0'
 
     api 'com.github.bumptech.glide:glide:4.15.1'
-    api(dir: 'libs', name: 'avif-integration.aar')
+    api fileTree(dir: 'libs', include: ['avif-integration.aar'])
     api 'com.github.bumptech.glide:okhttp3-integration:4.15.1'
     api 'com.squareup.okhttp3:okhttp:4.11.0'
 
